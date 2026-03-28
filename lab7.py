@@ -1,5 +1,8 @@
-dogumYili = int(input("Dogum yilinizi giriniz: "))
+A={"Elma","Armut","Kiraz"}
+B={"Kiraz","Muz","Portakal"}
 
-yas = 2025-dogumYili
+kesisim = A.intersection(B)
+print(kesisim)
 
-print(f"Yasiniz: {yas}")
+fark = A.difference(B)
+print(fark)

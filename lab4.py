@@ -1,5 +1,6 @@
-x,y,z = 10,20,30
+sayilar1=(1,2,3)
+sayilar2=(4,5,6)
+birlesim = sayilar1 + sayilar2
+print(birlesim)
 
-ortalama = (x+y+z)/3
-
-print(f"Ortalamasi: {ortalama}")
+print(birlesim[1],birlesim[3])

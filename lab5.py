@@ -1,5 +1,11 @@
-parola = input("Parolanizi giriniz: ")
-tekrar = int(input("Kac kere tekrar etsin: "))
+sehirler=[]
+for i in range(0,3):
+    sehir = input("Şehir adı giriniz: ")
+    sehirler.append(sehir)
 
-for tek in range(0,tekrar):
-    print(f"Parolaniz: {parola}")
+
+sehirler = tuple(sehirler)
+
+for sehir in sehirler:
+    if sehir.startswith("A"):
+        print(sehir)

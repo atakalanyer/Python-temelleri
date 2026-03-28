@@ -1,27 +1,9 @@
-while True:
-    try:
-        ilkSayi = int(input("İlk sayiniz: "))
-        ikinciSayi = int(input("İkinci sayiniz: "))
+sehirler=set()
+for i in range(0,5):
+    sehir = input("Şehir adı giriniz: ")
+    sehirler.add(sehir)
 
-        islem = input("Yapmak istediginiz islem türü(+,-,*,/),(Cikmak icin q): ")
+dsehir = input("Şehir adı giriniz: ")
 
-        if islem == "q":
-            break
-        elif islem == "+":
-            total = ilkSayi+ikinciSayi
-        elif islem == "-":
-            print("İsleminiz mutlak degere alinacaktir.")
-            total = ilkSayi-ikinciSayi
-            total = abs(total)
-        elif islem == "*":
-            total = ilkSayi*ikinciSayi
-        elif islem == "/":
-            total = ilkSayi/ikinciSayi
-        else:
-            print("Hatali islem girdiniz.")
-        
-        print(f"İslem sonucunuz: {total}")
-
-    except Exception as ex:
-        print("Hatali giris yaptiniz.",ex)
-            
+if dsehir in sehirler:
+    print("Bu şehir daha önce girilmiş.")
