@@ -1,1 +1,1 @@
-Python basics
+Python Dilinde Temel Kod Örnekleri.
